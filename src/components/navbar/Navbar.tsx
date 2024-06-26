@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 const navItems = [
-    { path: '/pages/about', text: 'About' },
-    { path: '/pages/contact', text: 'Contact' },
+    { path: '/about', text: 'About' },
+    { path: '/contact', text: 'Contact' },
 ]
 
 export const Navbar = () => {
