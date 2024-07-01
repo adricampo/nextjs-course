@@ -1,10 +1,11 @@
-'use client'
-import styles from "./page.module.css";
+import { redirect } from "next/navigation";
 
 export default function Home() {
+  redirect("/dashboard/counter");
+
   return (
-    <main className={styles.main}>
-      <h1>WELCOME</h1>
-    </main>
+    <>
+      <h1>Hola Mundo</h1>
+    </>
   );
 }
