@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-// import { useState } from "react";
+import { useState } from "react";
 
 interface SideBarMenuItemsProps {
   path: string;
@@ -18,7 +18,6 @@ export default function SidebarMenuItem({
 }: SideBarMenuItemsProps) {
   const currentPath = usePathname();
 
-  // const [counter, setCounter] = useState(10)
   return (
     <Link
       href={path}
@@ -33,12 +32,5 @@ export default function SidebarMenuItem({
         </span>
       </div>
     </Link>
-
-    // <div className="cursor-pointer display flex row align-items justify-content" onClick={ () => setCounter(counter + 1) }>
-    //   <div>{icon}</div>
-    //   <div className="flex flex-col align-items justify-content-center">
-    //     <span className="text-lg font-bold leading-5 text-white">{counter}</span>
-    //   </div>
-    // </div>
   );
 }

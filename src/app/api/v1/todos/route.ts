@@ -27,11 +27,11 @@ export async function GET(request: Request) {
   });
 }
 
-
 const postSchema = object({
   description: string().required(),
   complete: boolean().optional().default(false)
 });
+
 export async function POST(request: Request) {
   try {
     const { description, complete } = await postSchema.validate(

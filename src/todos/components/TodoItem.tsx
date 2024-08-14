@@ -6,7 +6,6 @@ import { IoCheckboxOutline, IoSquareOutline } from "react-icons/io5";
 interface TodoItemProps {
     todo: Todo
     updateTodo: (id: string, complete: boolean) => Promise<Todo|void>
-    // actions
 }
 
 

@@ -23,7 +23,7 @@ export const TodosGrid = ({ todos = [] }: TodosGridProps) => {
         // vemos como actualiza solo (y de forma óptima) el componente correspondiente
         console.log(updatedTodo)
 
-        // no es un refresh destructivo, no perdemos el estado
+        // no es un refresh destructivo, no perdemos el estado. es una nueva request al server (reRenderiza los servercomponents)
         router.refresh()
     }
 
