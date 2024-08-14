@@ -1,10 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 ## Development
 
 1. Levantar DB
+
 ```
 docker-compose up -d
 ```
+
 ## Prisma comands
 
 ```
@@ -21,13 +24,14 @@ Cambiar el valor del .env.template a .env
 npx prisma migrate dev
 ```
 
-4.generar manipulaciones en bases de datos 
+4. generar manipulaciones en bases de datos
+
 ```
 npx prisma generate
 ```
+
 5. Ejecutar el seed inicial para poder vaciar la db en local
-[crear la bd](localhost:3000/api/v1/seed)
- 
+   [crear la bd](localhost:3000/api/v1/seed)
 
 ## Getting Started
 

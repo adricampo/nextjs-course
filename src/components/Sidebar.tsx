@@ -27,6 +27,12 @@ const menuItems = [
     title: "Favoritos",
     subTitle: "Global state",
   },
+  {
+    path: "/dashboard/todos",
+    icon: <IoHeartOutline size={40} />,
+    title: "Todos",
+    subTitle: "BBDD client side changes", 
+  },
 ];
 
 export default function Sidebar() {
