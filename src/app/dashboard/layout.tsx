@@ -1,20 +1,27 @@
-import Sidebar from "@/components/Sidebar";
-import TopMenu from "@/components/TopMenu";
+// Admin Dashboard https://tailwindcomponents.com/component/dashboard-12
+import { Sidebar, TopMenu } from '@/components';
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+export default function DashboardLayout({
+  children
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <div className="bg-slate-100 overflow-y-scroll w-screen h-screen antialiased text-slate-300 selection:bg-blue-600 selection:text-white">
-      <div className="flex flex-row">
-        <Sidebar />
-        <div className="flex-col w-full">
-          <TopMenu />
-          <div className="w-full text-slate-900">{children}</div>
+    <>
+      <Sidebar />
+          
+      {/* Main Layout content - Contenido principal del Layout */}
+      <div className="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] min-h-screen">
+        
+        <TopMenu />
+
+        {/* TODO: Contenido en el Layout.tsx */}
+        <div className="px-6 pt-6 bg-white p-2 m-2 pb-5 rounded">
+
+          { children }
+          
         </div>
       </div>
-    </div>
+    </>
   );
 }
